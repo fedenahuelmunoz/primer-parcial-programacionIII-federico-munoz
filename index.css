@@ -1,0 +1,263 @@
+/*AQUÍ COLOCAMOS EL ESTILADO DE NUESTRA PÁGINA WEB*/
+
+/*Estilo para el cuerpo entero de la página*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'DM Sans', sans-serif; /*Fuente que elegimos por defecto para todo texto en la página web*/
+}
+
+
+
+/*============ FORMATO PARA EL HEADER O CABECERA DEL SITIO WEB=====================*/
+.site-header{
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #063675;
+}
+
+/*Estilo para el logo de la empresa que se encuentra dentro del header del sitio web*/
+.site-header .img-container #logo-empresa-header{
+    width: 5rem;
+    height: auto;
+}
+
+/*Estilo para la barra de navegación del header del sitio web*/
+.header-nav{
+    width: 100%;
+}
+
+/*Estilo para la lista desordenada que se encuentra dentro del contenedor class="header-nav"*/
+.header-nav ul{
+    padding-left: 0px;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+/*Estilo para cada etiqueta <a> de los items de la lista desordenada dentro del contenedor class="header-nav"*/
+.header-nav ul li a{
+    text-decoration: none;
+    color:cadetblue;
+}
+
+
+/*============ FORMATO PARA EL MAIN DEL SITIO WEB=====================*/
+
+/*Estilo para la sección hero del main*/
+.main-container .hero{
+    width: 100%;
+    min-height: 100vh;
+
+    /*Damos estilo al fondo de la sección hero del main*/
+    background-image: url(assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*Damos estilo al texto dentro de la sección hero del main*/
+    font-family: 'Manrope';
+    color:honeydew; 
+}
+
+/*Estilo para el título principal de la sección hero del main*/
+.main-container .hero h1{
+    font-size: 4rem;
+}
+
+/*Aplicamos pseudoclases sobre del boton de llamada a la acción de la sección hero del main*/
+.main-container .hero #CTA-button:hover{
+    background-color: azure;
+    color:black
+}
+
+/*Estilo para el subtítulo de la sección hero del main*/
+.main-container .hero h2{
+    font-size: 2.5rem;
+}
+
+/*Estilo para el section que es de la class="catalogo" donde disponemos de los coches en venta*/
+.catalogo{
+    padding: 2rem;
+}
+
+/*Estilo para div que contiene cada titulo de cada parte en la que está dividido el catalogo*/
+.catalogo-section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilo para la div que contiene el título de la parte del catalogo que alberga a los autos nobles y deportivos*/
+#nobles-y-deportivos{
+    margin-top: 4rem;
+}
+
+/*Estilo para la class="premiums-y-superdeportivos" que contiene los autos premiums y superdeportivos*/
+.premiums-y-superdeportivos {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/*Estilo para la class="nobles-y-deportivos" que contiene los autos nobles y deportivos*/
+.nobles-y-deportivos {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+
+/*Estilo para cada tarjeta de la class="card" dentro de la section="catalogo"*/
+/*Cada tarjeta contiene cada coche en venta*/
+.catalogo .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*============ FORMATO PARA EL FOOTER DEL SITIO WEB=====================*/
+
+/*Estilo general para el footer de la página web*/
+.site-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
+/*Estilo para la parte principal del pie de página, es decir, el div con class="main-footer"*/
+.site-footer .main-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background-color: cadetblue;
+}
+
+/*Estilo para el logo de la empresa que se encuentra dentro del div con class="img-container"
+que a su vez se halla dentro del pie de página del sitio web*/
+.site-footer .img-container #logo-empresa-footer{
+    width: 10rem;
+    height: auto;
+}
+
+
+/*Estilo para el div con class="list-main-footer" dentro de la parte principal del pie de página*/
+.site-footer .main-footer .list-main-footer{
+    padding-left: 1rem;
+    border-left: 0.1rem solid gray;
+}
+
+/**Estilo para cada lista desordenada que se encuentra dentro de cada contenedor class="list-main-footer
+perteneciente al div de class="main-footer" del pie de página*/
+.site-footer .main-footer .list-main-footer ul{
+    padding-left: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+/*Estilo para cada etiqueta <a> de los items de la lista desordenada dentro del contenedor class="list-main-footer"*/
+.site-footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Estilo para la parte inferior del footer que es tiene class="lower-section-footer*/
+.site-footer .lower-section-footer{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+/*Estilo para el texto contenido en la etiqueta <p> de la parte inferior del footer*/
+.site-footer .lower-section-footer p{
+    font-weight: bold;
+    color:antiquewhite;
+    margin-bottom: 0px;
+}
+
+
+/*============ MEDIA QUERIES PARA DISEÑO WEB RESPONSIVE=====================*/
+
+@media (max-width:770px){
+
+    /*Ajustes de responsividad para el encabezado o header del sitio web*/
+    .site-header{
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .header-nav ul{
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    /*Ajustes de responsividad para la sección hero del main del sitio web*/
+
+    .main-container .hero h1{
+        font-size: 2rem;
+        text-align: center;
+        padding: 0rem;
+    }
+
+    .main-container .hero h2{
+        font-size: 1rem;
+        text-align: center;
+        padding: 0rem;
+    }
+
+    /*Ajustes de responsividad para el footer o pie de página del sitio web*/
+    .site-footer {
+        height: auto;
+    }
+
+    .site-footer .main-footer {
+        flex-direction: column;
+        height: auto;
+        padding-top: 2.5rem;
+        padding-right: 1rem;
+        padding-bottom: 2.5rem;
+        padding-left: 1rem;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .site-footer .main-footer .list-main-footer {
+        border-left: none;
+        padding-left: 0;
+        border-top: 0.1rem solid gray;
+        padding-top: 1rem;
+        width: 100%;
+    }
+
+
+    .site-footer .lower-section-footer {
+        height: auto;
+        padding: 1rem;
+    }
+}
